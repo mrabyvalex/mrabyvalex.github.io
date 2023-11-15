@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mrabyvalex.github.io/weddingv2/static/css/main.68876400.css",
+    "main.js": "/mrabyvalex.github.io/weddingv2/static/js/main.a5f82a56.js",
+    "index.html": "/mrabyvalex.github.io/weddingv2/index.html",
+    "main.68876400.css.map": "/mrabyvalex.github.io/weddingv2/static/css/main.68876400.css.map",
+    "main.a5f82a56.js.map": "/mrabyvalex.github.io/weddingv2/static/js/main.a5f82a56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68876400.css",
+    "static/js/main.a5f82a56.js"
+  ]
+}
