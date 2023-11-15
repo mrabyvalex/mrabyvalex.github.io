@@ -30,7 +30,7 @@ export default function BasicSpeedDial() {
         flexGrow: 1,
       }}
     >
-      this is:{data}
+      this is1:{data}
       <SpeedDial
         ariaLabel="SpeedDial basic example"
         sx={{ position: "absolute", bottom: "0px", right: "20px" }}
