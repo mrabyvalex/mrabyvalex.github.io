@@ -1,0 +1,11 @@
+@import "../../styles/theme";
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  .header {
+    font-size: 2rem;
+    color: theme-color(header-text);
+  }
+}
