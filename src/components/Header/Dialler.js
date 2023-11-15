@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
@@ -16,6 +16,10 @@ const actions = [
 ];
 
 export default function BasicSpeedDial() {
+  const [data, updateData] = useState("");
+  const updateDataFn = (action) => (e) => {
+    updateData(JSON.stringify(action.name));
+  };
   return (
     <Box
       sx={{
@@ -26,6 +30,7 @@ export default function BasicSpeedDial() {
         flexGrow: 1,
       }}
     >
+      this is:{data}
       <SpeedDial
         ariaLabel="SpeedDial basic example"
         sx={{ position: "absolute", bottom: "0px", right: "20px" }}
@@ -33,7 +38,9 @@ export default function BasicSpeedDial() {
       >
         {actions.map((action) => (
           <SpeedDialAction
+            onClick={updateDataFn(action)}
             key={action.name}
+            tooltipOpen
             icon={action.icon}
             tooltipTitle={action.name}
           />
