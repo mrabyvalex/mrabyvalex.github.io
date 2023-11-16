@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import * as TW from "typewriter-effect/dist/core";
 import "./Typewriter.scss"
+import CONSTANTS from "../../constants";
 
 const Typewriter = () => {
   useEffect(() => {
@@ -10,16 +11,20 @@ const Typewriter = () => {
       return document.createTextNode(character);
     };
 
-    var typewriter = new TW(app, {
+    let typewriter = new TW(app, {
       loop: false,
       delay: 75,
       onCreateTextNode: customNodeCreator,
     });
 
-    typewriter
-      .typeString("A simple yet powerful native javascript")
-      .pauseFor(300)
-      .start();
+    CONSTANTS["WEDDING"].TYPEWRITER_TEXT.forEach(item => {
+      const str = typeof item ==='string' ? item: item.text;
+      const delay = typeof item ==='object' && typeof item.delay !=='undefined'? item.delay: 2000
+      typewriter = typewriter.typeString(str)
+        .pauseFor(delay)
+    })
+
+    typewriter.start();
   }, []);
   return <div id="typewriter"></div>;
 };
