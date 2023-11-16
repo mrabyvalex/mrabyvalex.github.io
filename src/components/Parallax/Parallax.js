@@ -1,16 +1,16 @@
 import React from 'react';
 import "./Parallax.scss";
+import background from "../../assets/bg_img_v1.png";
+import Typewriter from '../TypeWriter/Typewriter';
 
 
 const Parallax = () => {
+    const getBg = ()=>  `url(${background})`
     return (<>
 
-        <section class="parallax-container">
-            <h1>Cerro Torre</h1>
-            <p>
-                Cerro Torre is a mountain of sheer beauty whose spectacular attributes
-                makcqe it an unique gem in Argentina.
-            </p>
+        <section class="parallax-container" style={{backgroundImage:getBg("home")  }}>
+        <Typewriter/>
+
         </section>
 
         <section class="buffer"></section>

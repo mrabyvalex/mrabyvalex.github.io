@@ -26,7 +26,9 @@ const Typewriter = () => {
 
     typewriter.start();
   }, []);
-  return <div id="typewriter"></div>;
+  return <div className="container">
+    <div id="typewriter" />
+  </div>;
 };
 
 export default Typewriter;
