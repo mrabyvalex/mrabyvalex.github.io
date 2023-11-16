@@ -1,0 +1,6 @@
+.header_container {
+    position: absolute;
+    top: 0 !important;
+    right: 20px;
+    transform: translate(0, calc(100vh - 100% - 20px));
+}
