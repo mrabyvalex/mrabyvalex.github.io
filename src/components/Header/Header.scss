@@ -1,6 +1,10 @@
 .header_container {
-    position: absolute;
+    position: fixed;
     top: 0 !important;
     right: 20px;
     transform: translate(0, calc(100vh - 100% - 20px));
+
+    @media screen and (min-width: 480px) {
+       transform:  translate(calc((-100vw + 494px)/2), calc(100vh - 100% - 20px));
+       }
 }
