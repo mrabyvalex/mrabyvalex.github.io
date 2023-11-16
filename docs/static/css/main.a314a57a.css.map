@@ -1,1 +1,1 @@
-{"version":3,"file":"static/css/main.a314a57a.css","mappings":"AAEA,KACE","sources":["components/App/App.scss"],"sourcesContent":["@import \"../../styles/theme\";\n\n.App {\n  width: 100%;\n}\n"],"names":[],"sourceRoot":""}
+{"version":3,"file":"static/css/main.a314a57a.css","mappings":"AAEA,KACE","sources":["components/App/App.scss"],"sourcesContent":["@import \"../../styles/theme\";\r\n\r\n.App {\r\n  width: 100%;\r\n}\r\n"],"names":[],"sourceRoot":""}
