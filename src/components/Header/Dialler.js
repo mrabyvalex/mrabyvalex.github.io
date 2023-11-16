@@ -21,31 +21,20 @@ export default function BasicSpeedDial() {
     updateData(JSON.stringify(action.name));
   };
   return (
-    <Box
-      sx={{
-        position: "fixed",
-        height: "300px",
-        width: "100%",
-        transform: "translateZ(0px)",
-        flexGrow: 1,
-      }}
+    <SpeedDial
+      ariaLabel="SpeedDial basic example"
+      // sx={{ position: "absolute", bottom: "0px", right: "20px" }}
+      icon={<SpeedDialIcon />}
     >
-      this is1:{data}
-      <SpeedDial
-        ariaLabel="SpeedDial basic example"
-        sx={{ position: "absolute", bottom: "0px", right: "20px" }}
-        icon={<SpeedDialIcon />}
-      >
-        {actions.map((action) => (
-          <SpeedDialAction
-            onClick={updateDataFn(action)}
-            key={action.name}
-            tooltipOpen
-            icon={action.icon}
-            tooltipTitle={action.name}
-          />
-        ))}
-      </SpeedDial>
-    </Box>
+      {actions.map((action) => (
+        <SpeedDialAction
+          onClick={updateDataFn(action)}
+          key={action.name}
+          tooltipOpen
+          icon={action.icon}
+          tooltipTitle={action.name}
+        />
+      ))}
+    </SpeedDial>
   );
 }
