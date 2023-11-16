@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import * as TW from "typewriter-effect/dist/core";
+import "./Typewriter.scss"
 
 const Typewriter = () => {
   useEffect(() => {

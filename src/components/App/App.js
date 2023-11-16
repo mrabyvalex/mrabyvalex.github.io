@@ -9,7 +9,7 @@ function App() {
     <div
       className="App"
       style={{
-        backgroundImage: `url(${background})`,
+        // backgroundImage: `url(${background})`,
         width: "100%",
         height: "100vh",
         margin: 0,
