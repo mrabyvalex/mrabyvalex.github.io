@@ -12,14 +12,16 @@ body {
 
 .parallax-container {
   display: flex;
-  min-height: 100vh;
+  min-height: 600px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-
+  background-blend-mode: multiply;
+  background-color: grey;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-size: cover;
+  background-repeat: no-repeat;
   color: var(--color);
   row-gap: 4rem;
 

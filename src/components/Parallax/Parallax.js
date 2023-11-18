@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Parallax.scss";
-import background from "../../assets/bg_img_v1.png";
+import background from "../../assets/bg_img_v2.jpg";
 import Typewriter from '../TypeWriter/Typewriter';
 
 
